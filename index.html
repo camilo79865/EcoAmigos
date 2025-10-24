@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoAmigos - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ecoamigos.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  .hero {
+  background: url('imagenes/banner.jpg') center/cover no-repeat;
+  height: 70vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+  </style>
+</head>
+<body>
+  <header class="bg-success text-white p-3 sticky-top shadow">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3">🌿 EcoAmigos</h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+        <li class="nav-item"><a href="sobremi.html" class="nav-link text-white">Sobre mí</a></li>
+        <li class="nav-item"><a href="ideas.html" class="nav-link text-white">Ideas ecológicas</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Bienvenido a EcoAmigos</h1>
+    <p>Un espacio para descubrir ideas simples que ayudan al planeta</p>
+    <a href="ideas.html" class="btn btn-light btn-lg mt-3">Explorar ideas</a>
+  </div>
+</section>
+
+
+  <section class="container py-5 text-center">
+    <h2 class="mb-4">¿Qué encontrarás aquí?</h2>
+    <p class="lead">EcoAmigos es un sitio pensado para compartir consejos prácticos y hábitos sencillos que cualquiera puede aplicar en su vida diaria para cuidar la Tierra.</p>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <img src="imagenes/reciclaje.jpg" class="img-fluid rounded shadow mb-3" alt="Reciclaje">
+        <h4>Reciclaje inteligente</h4>
+        <p>Ideas para organizar mejor los residuos en casa y darles una segunda vida a los materiales.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes/naturaleza.png" class="img-fluid rounded shadow mb-3" alt="Naturaleza">
+        <h4>Pequeños cambios</h4>
+        <p>Acciones cotidianas como ahorrar agua, reducir plásticos o aprovechar mejor los recursos.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes/energia.jpg" class="img-fluid rounded shadow mb-3" alt="Energía sostenible">
+        <h4>Energía responsable</h4>
+        <p>Consejos para reducir el consumo eléctrico y usar alternativas más sostenibles.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-success text-white text-center p-3 mt-5">
+    <p>© 2025 EcoAmigos - Todos los derechos reservados</p>
+  </footer>
+  <script src="ecoamigos.js"></script>
+</body>
+</html>

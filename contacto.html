@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoAmigos - Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ecoamigos.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero {
+      background: url('imagenes/banner.jpg') center/cover no-repeat;
+      height: 50vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-success text-white p-3 sticky-top shadow">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3">🌿 EcoAmigos</h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+        <li class="nav-item"><a href="sobremi.html" class="nav-link text-white">Sobre mí</a></li>
+        <li class="nav-item"><a href="ideas.html" class="nav-link text-white">Ideas ecológicas</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Contacto</h1>
+      <p>¿Tienes una idea ecológica? ¡Compártela con nosotros!</p>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="text-center mb-4">Escríbenos 🌍</h2>
+        <form id="contactForm" class="p-4 border rounded shadow">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Tu idea ecológica</label>
+            <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Enviar</button>
+        </form>
+        <p id="formResponse" class="mt-3 text-center"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-success text-white text-center p-3 mt-5">
+    <p>© 2025 EcoAmigos - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="ecoamigos.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5fdf6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #2e7d32, #4caf50);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#inicio h2 {
+    color: #2e7d32;
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+#inicio img {
+    margin-top: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+
+
+#sobre-mi h2 {
+    color: #388e3c;
+    margin-bottom: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 1s ease forwards;
+}
+
+
+
+#ideas {
+    background: #e8f5e9;
+    border-top: 3px solid #4caf50;
+    border-bottom: 3px solid #4caf50;
+}
+
+#ideas h2 {
+    color: #1b5e20;
+    font-weight: 600;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+#ideas .card {
+    border: none;
+    border-left: 6px solid #4caf50;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+#ideas .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#ideas h3 {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+#contacto h2 {
+    color: #2e7d32;
+    font-weight: 600;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+#contactForm {
+    border: 2px solid #4caf50;
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+#contactForm button {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#contactForm button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(90deg, #388e3c, #2e7d32);
+    font-size: 0.9rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
