@@ -58,22 +58,19 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <h2 class="text-center mb-4">Escríbenos 🌍</h2>
-<form action="https://formspree.io/f/manlqqjp" method="POST" class="p-4 border rounded shadow">
+<form id="contactForm" class="p-4 border rounded shadow">
   <div class="mb-3">
     <label for="nombre" class="form-label">Nombre</label>
-    <input type="text" id="nombre" name="nombre" class="form-control" required>
-  </div>
+    <input type="text" id="nombre" name="nombre" class="form-control" required> </div>
+  <div class="mb-3"> <label for="correo" class="form-label">Correo electrónico</label>
+    <input type="email" id="correo" name="correo" class="form-control" required> </div> 
   <div class="mb-3">
-    <label for="correo" class="form-label">Correo electrónico</label>
-    <input type="email" id="correo" name="email" class="form-control" required>
-  </div>
-  <div class="mb-3">
-    <label for="mensaje" class="form-label">Tu idea ecológica</label>
-    <textarea id="mensaje" name="message" class="form-control" rows="4" required></textarea>
-  </div>
-  <button type="submit" class="btn btn-success w-100">Enviar</button>
-</form>
-<p id="formResponse" class="mt-3 text-center"></p>
+      <label for="mensaje" class="form-label">Tu idea ecológica</label> 
+    <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+  </div> 
+  <button type="submit" class="btn btn-success w-100">Enviar</button> 
+     </form> 
+        <p id="formResponse" class="mt-3 text-center"></p>
 
       </div>
     </div>
@@ -86,4 +83,5 @@
   <script src="ecoamigos.js"></script>
 </body>
 </html>
+
 
